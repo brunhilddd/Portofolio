@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  let currentIndex = 0;
+  // Removed duplicate declaration of currentIndex
 
 function slide(direction) {
   const slider = document.getElementById("projectSlider");
@@ -41,3 +41,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+  const slider = document.getElementById("projectSlider");
+  let currentIndex = 0;
+
+  function slide(direction) {
+    const cards = slider.querySelectorAll(".project-card");
+    const cardWidth = cards[0].offsetWidth + 24; // 24 = gap
+    const visibleCards = Math.floor(slider.parentElement.offsetWidth / cardWidth);
+    const maxIndex = cards.length - visibleCards;
+
+    currentIndex += direction;
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex > maxIndex) currentIndex = 0; // loop kembali
+
+    slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+  }
+
+  // Auto slide
+  setInterval(() => {
+    slide(1);
+  }, 2000); // setiap 5 detik
