@@ -19,30 +19,81 @@
     </nav>
   </header>
 
-  <section id="hero">
-    <div class="hero-text">
-      <h1>Hello, I'm a UI/UX Designer</h1>
-      <p>I design clean, user-friendly interfaces.</p>
-    </div>
-  </section>
+<section id="hero">
+  <div class="bubbles-container">
+    <img src="noah.jpg" class="bubble bubble1" alt="Project 1" />
+    <img src="noah.jpg" class="bubble bubble2" alt="Project 2" />
+    <img src="noah.jpg" class="bubble bubble3" alt="Project 3" />
+    <img src="noah.jpg" class="bubble bubble4" alt="Project 4" />
+    <img src="noah.jpg" class="bubble bubble5" alt="Project 5" />
+    <img src="noah.jpg" class="bubble bubble6s" alt="Project 6" />
+    <!-- Tambahkan lebih banyak bubble sesuai kebutuhan -->
+  </div>
+  <div class="hero-content">
+    <h1>Hello, I'm a UI/UX Designer</h1>
+    <p>I design user-friendly digital experiences.</p>
+    <a href="#projects" class="cta-button">View My Work</a>
+  </div>
+</section>
 
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Project 1</h3>
-        <p>Short description of the project.</p>
-      </div>
-      <div class="project-card">
-        <h3>Project 2</h3>
-        <p>Short description of the project.</p>
-      </div>
-      <div class="project-card">
-        <h3>Project 3</h3>
-        <p>Short description of the project.</p>
-      </div>
+  <!-- <section id="services">
+    <h2>My Services</h2>
+    <div class="service-card">
+      <img src="design-icon.png" alt="Design Icon" />
+      <h3>UI/UX Design</h3>
+      <p>Creating user-centered designs that are both functional and aesthetically pleasing.</p>
     </div>
-  </section>
+    <div class="service-card">
+      <img src="consulting-icon.png" alt="Consulting Icon" />
+      <h3>Consulting</h3>
+      <p>Providing expert advice on design strategies and best practices.</p>
+    </div>
+  </section> -->
+
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="slider-container">
+    <button class="slider-btn left" onclick="slide(-1)">&#10094;</button>
+    <div class="slider" id="projectSlider">
+      <div class="project-card">
+        <img src="project1.jpg" alt="Project 1" />
+        <div class="card-content">
+          <h3>Project One</h3>
+          <p>Redesign mobile app for online learning platform.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="project2.jpg" alt="Project 2" />
+        <div class="card-content">
+          <h3>Project Two</h3>
+          <p>UX case study for food delivery service website.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="project3.jpg" alt="Project 3" />
+        <div class="card-content">
+          <h3>Project Three</h3>
+          <p>UI design for a task management desktop app.</p>
+        </div>
+      </div>
+            <div class="project-card">
+        <img src="project4.jpg" alt="Project 4" />
+        <div class="card-content">
+          <h3>Project Three</h3>
+          <p>UI design for a task management desktop app.</p>
+        </div>
+      </div>
+            <div class="project-card">
+        <img src="project5.jpg" alt="Project 5" />
+        <div class="card-content">
+          <h3>Project Three</h3>
+          <p>UI design for a task management desktop app.</p>
+        </div>
+      </div>
+      <!-- Tambahkan lebih banyak kartu jika perlu -->
+    </div>
+    <button class="slider-btn right" onclick="slide(1)">&#10095;</button>
+  </div>
 
   <section id="about">
     <h2>About Me</h2>
